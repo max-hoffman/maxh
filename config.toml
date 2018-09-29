@@ -1,0 +1,10 @@
+# baseURL = "/"
+languageCode = "en-us"
+title = "Max Hoffman's Personal Site"
+theme = "basics"
+
+[params]
+    author = "Max Hoffman"
+    github = "max-hoffman"
+    linkedin = "max-hoffman-04790aa6"
+    styles = ["css/styles.css"]
