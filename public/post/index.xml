@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Max Hoffman&#39;s Personal Site</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Max Hoffman&#39;s Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Sep 2018 12:55:06 -0500</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[project] New Site</title>
+      <link>/post/new-site/</link>
+      <pubDate>Sat, 29 Sep 2018 12:55:06 -0500</pubDate>
+      
+      <guid>/post/new-site/</guid>
+      <description>I used the Hugo templating framework to build this site, and will list some of the pros/cons that I noticed.
+Hugo originally got my attention on HN, through various projects builing landing pages with the framework. Kubernetes also migrated their docs to Hugo recently, citing scaling issues with Jekyll. I was considering using Next.js to make a markdown/jsx-based site, but Hugo was both less complex and more easily scalable than a minimalist node or React website.</description>
+    </item>
+    
+  </channel>
+</rss>

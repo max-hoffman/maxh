@@ -1,7 +1,7 @@
 # baseURL = "/"
 languageCode = "en-us"
 title = "Max Hoffman's Personal Site"
-theme = "basics"
+relativeURLS = true
 
 [params]
     author = "Max Hoffman"

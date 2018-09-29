@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>[project] New Site</title>
+
+        <link rel="stylesheet" href="../../css/stylesheet.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="../../">Home</a>
+              <a class="nav-item nav-link" href="https://github.com/max-hoffman" target="_blank">GitHub</a>
+              
+              <a class="nav-item nav-link" href="https://linkedin.com/in/max-hoffman-04790aa6" target="_blank">LinkedIn</a>
+              <a class="nav-item nav-link " href="../../about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="../../">Max Hoffman&#39;s Personal Site</a></h1>
+          <span id="author-name">
+            <h6><a href="../../about/">Max Hoffman</a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>[project] New Site</h1>
+  <div class="blog-post-subheader">
+    <time>29 Sep 2018</time>
+  </div>
+  <div class="blog-post-content">
+    
+
+<p>I used the Hugo templating framework to build this site, and will list some of the pros/cons that I noticed.</p>
+
+<p><a href="https://github.com/gohugoio/hugo" title="Hugo">Hugo</a> originally got my attention on HN, through various projects builing landing pages with the framework.
+Kubernetes also <a href="https://www.google.com" title="Kubernetes">migrated their docs</a> to Hugo recently,
+citing scaling issues with Jekyll. I was considering using Next.js to make a markdown/jsx-based site,
+but Hugo was both less complex and more easily scalable than a minimalist node or React website.</p>
+
+<h3 id="pros">Pros:</h3>
+
+<ul>
+<li><p>Speed. The Go compiler with hot-reload are built-in and extrememly nice, and give a static folder
+that is easy to deploy.</p></li>
+
+<li><p>Themes. Community-built themes take away the need to spend days configuring custom css. I built the generic site in about 5 hours, which is mostly because now I don&rsquo;t have to spend a week tweaking the css to deviate satisfactorly
+from the bootstrap generics.</p></li>
+
+<li><p>Opinionated: The framework has expected ways to structure your project and organize your articles. I am
+personally not interested in spending a long time trying to think about the optimal way to modularize and structure
+a blog website. The writers of Hugo were interested in that, and they spent several years optimizing that,
+and I&rsquo;d rather not try to reinvent the wheel.</p></li>
+
+<li><p>Flexible: Hugo has mechanisms to let you customize markdown files with html to the extent that it&rsquo;s possible.</p></li>
+</ul>
+
+<h3 id="cons">Cons:</h3>
+
+<ul>
+<li><p>Docs. The written and video tutorials try to be helpful, but are lacking. It&rsquo;s a new framework, and
+it seems like the expected user has to have a strong grasp of front-end development for Hugo to seem
+approachable. Stackoverflow and their in-house forums weren&rsquo;t terrbily helpful.</p></li>
+
+<li><p>Flexible: Markdown rarely needs special-use code, so the overhead of learning how to use the templating,
+parameter binding, and shortcoding is sort of a downside of Hugo. I think if the docs were better (maybe
+it&rsquo;s just me) it would be a much clearer upside.</p></li>
+
+<li><p>Templating language: I personally don&rsquo;t like the templating syntax style. It&rsquo;s kind of like Jinja. I think there
+are alternatives, but if you want to stick close to the docs you have to use the default.</p></li>
+</ul>
+
+<h3 id="overall">Overall:</h3>
+
+<p>I hope that Hugo will gain traction and be able to mature as a framework. The logic behind the article structuring is there, but I think the docs could do a better job of explaining more thoroughly how to implement advanced features.</p>
+
+<p>Moving forward I might rely more on trying to look at existing projects to see how they structure themselves. There&rsquo;s a limit to how complex a blogging website can be, and I think it will be worth my time to try to learn one framework extremely well to save myself startup costs in the future.</p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2018 Max Hoffman.
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+
