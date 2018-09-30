@@ -6,13 +6,13 @@ layout: default
 resources:
 - src: 'img/billy.jpg'
   name: Billy
-  title: Billy
+  title: billy
 - src: 'img/artemis.jpg'
   name: Artemis
-  title: Artemis
+  title: artemis
 - src: 'img/lola.jpg'
   name: Lola
-  title: Lola
+  title: lola
 ---
 
 Welcome to my website. This contains a collection of some links to repos I've worked on, acadamic research projects I've been involved in, and articles when I infrequently write.
@@ -25,4 +25,9 @@ I have experience with app, web and blockchain development, previously attending
 
 For the last year I have worked as a venture partner for Contrary Capital, contributing my scientific and technical background to vet (hundreds of?) early stage startups from dozens of universities around the world.
 
-{{< gallery >}}
+<!-- {{< gallery >}} -->
+<div class="gallery">
+  {{< figure src="img/artemis.jpg" name="Artemis" height="250" >}}
+  {{< figure src="img/billy.jpg" name="Billy" height="250" >}}
+  {{< figure src="img/lola.jpg" name="Lola" height="250" >}}
+</div>
