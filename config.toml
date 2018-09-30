@@ -1,4 +1,4 @@
-# baseURL = "/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Max Hoffman's Personal Site"
 relativeURLS = true
