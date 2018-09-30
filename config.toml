@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Max Hoffman's Personal Site"
+title = "My Projects"
 relativeURLS = true
 
 [params]

@@ -1,5 +1,6 @@
 ---
-title: "[project] New Site"
+title: "Hugo Templating"
+type: "project"
 date: 2018-09-29T12:55:06-05:00
 draft: true
 ---
