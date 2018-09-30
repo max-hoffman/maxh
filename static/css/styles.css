@@ -10,7 +10,7 @@ figure {
   display: flex;
 }
 
-body, html {
+/* body, html {
   height: 100%;
 }
 .container-fluid {
@@ -21,7 +21,7 @@ body, html {
 
 #posts {
   flex-grow: 1;
-}
+} */
 /* footer {
   position: fixed;
   bottom: 0px;
