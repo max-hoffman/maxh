@@ -8,7 +8,21 @@ figure {
 
 .gallery {
   display: flex;
+  flex-direction: row;
 }
+
+@media only screen and (max-width: 640px) {
+  figure {
+    flex-grow: 1
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 /* body, html {
   height: 100%;
