@@ -1,0 +1,12 @@
+install:
+  - wget -q https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz -O hugo_0.14_linux_amd64.tar.gz
+  - tar -zxf hugo_0.14_linux_amd64.tar.gz
+  - ln -sf ./hugo_0.14_linux_amd64/hugo_0.14_linux_amd64 hugo
+  
+git:
+  - submodules: true
+
+script:
+  - hugo --theme=basics --buildDrafts
+  
+after_success:

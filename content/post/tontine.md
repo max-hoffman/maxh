@@ -1,5 +1,5 @@
 ---
-title: "Tontine"
+title: "Solidity & Tontines"
 type: "article/project"
 date: 2018-01-02T12:55:06-05:00
 draft: true
