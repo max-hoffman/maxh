@@ -22,3 +22,11 @@ figure {
     align-items: center;
   }
 }
+
+div.center figure img {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  max-width: 80%;
+}
