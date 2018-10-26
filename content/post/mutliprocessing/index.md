@@ -1,5 +1,5 @@
 ---
-title: "Multiprocessing with Tflon"
+title: "Multiprocessing in Python"
 type: "research/project"
 date: 2018-10-04T19:32:09-05:00
 draft: true
@@ -11,7 +11,7 @@ resources:
 
 ## Context
 
-I spent the last couple of weeks learning how to optimize multithreading and multiprocessing to maximize CPU and GPU throughput during Tensorflow training. So far we have improved training speed 3-4 fold, largely thanks to Python's multiprocessing library. The library's documentation is not inviting, and I found a lack of community information on the subject, so I thought I would summarize some of what I learned. I knew nothing about multiprocessing when I started this project, so hopefully everything here should not be too out of reach for beginners.
+I spent the last couple of weeks learning how to optimize multithreading and multiprocessing to maximize CPU and GPU throughput during Tensorflow training. We have been able to remove the CPU bottleneck, making our training GPU-limited. The library's documentation is not inviting, and I found a lack of community information on the subject, so I thought I would summarize some of what I learned. I knew nothing about multiprocessing when I started this project, so hopefully everything here should not be too out of reach for beginners.
 
 Multihreading and multiprocessing share the common goal of parallizing code. When you want many things happening at the same time, some combination of the two can usually logarithmically reduce time complexity of your code.
 
@@ -78,17 +78,18 @@ Spawned processes reinstantiate normal Python classes. That means you need Pipes
 The last barrier to implementation is smoothly managing all running threads, processes and in particular queues. Full queues error on `.put()`, empty queues hang on `.get()`, and every queue and lock method can block, hang and die if not timed-out are restarted on a regular basis. The documentation glosses over proper process and thread managing, so it is important to be aware of these details if building your own.
 
 ### Extra tricks
-We used pyarrow serialization and a custom `IndexQueue` to enhance our pipeline.
 
 + Pickling data is error-prone and slow. We used a [numpy-optimized serializer](https://arrow.apache.org/blog/2017/10/15/fast-python-serialization-with-ray-and-arrow/ ray/pyarrow) to reduce the communication latency over our batch-queue (note that the same speedup does not work in reverse, because the unprocessed data is in molecular format.)
 
 + Data only leaves the index-queue from a single source after instantiation. A multiprocessing Queue allows communication of indexes between the parent and worker processes, while the custom `IndexQueue` perpetually feeds data into that loop.
 
-## Results
-*Forthcoming*
++ Using a `mulitprocessing.Manager.Queue` instead of 'multiprocessing.Queue` provided more stability for us with `Python 2.7.6`. The fidelity of different implementations will depend on your particular version of Python.
+
+### Future
+
+We ended up using the batch-queue to replace the index-queue. Instead of copying data to each process,
+we can now send serialized batches to the processes. Because multiprocessing gives us leeway with CPU-intensive operations, we can have data-efficient processes and centrally track epochs while still being GPU-limited.
 
 ### *More*
-
-*[Manager implementation](https://stackoverflow.com/questions/21968278/multiprocessing-share-unserializable-objects-between-processes "Share objects")*
 
 *[Similar application from Tencent engineer](https://wltrimbl.github.io/2014-06-10-spelman/intermediate/python/04-multiprocessing.html)*

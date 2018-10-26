@@ -24,7 +24,9 @@ Few operations require proprocessing, and most modules act as a common interface
 In order for the module system to work for Tflon, the process of reading in data and training has to be abstracted from the end-user.
 
 Currently this is solved with:
+
 + custom Schema and Feed classes to manage input data
+
 + custom Tower and Trainer classes that parse, organize and run the user-defined Model on Tensorflow
 
 This can be great for users if all of those custom classes are robust, cover edge-cases/special features, and have detailed documentation for their APIs. The truth is that Tflon is in the process of building out those features, and right now you have to understand the abstraction layers to usefully apply Tflon to anything besides the straightforward models.
