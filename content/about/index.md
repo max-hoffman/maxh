@@ -17,7 +17,7 @@ resources:
 
 Welcome to my website. This contains a collection of some links to repos I've worked on, acadamic research projects I've been involved in, and articles when I infrequently write.
 
-I am a second year medical student at Washington University in Saint Louis progressing towards a computer science PhD in tandem with his medical degree.  Before medical school he graduated Summa Cum Laude from Pomona College in 2016, double majoring in Chemistry and Mathematics.
+I am a second year medical student at Washington University in Saint Louis progressing towards a computer science PhD in tandem with his medical degree.  Before medical school I graduated Summa Cum Laude from Pomona College in 2016, double majoring in Chemistry and Mathematics.
 
 I currently works as a developer in the Swamidass Lab at WashU, researching graph-based recurrent neural networks that predict quantum chemical properties and contributing to open-source machine learning frameworks.I have worked in an evolutionary dynamics lab modeling chemical reactions, a biological lab modeling C. elegans division, a biochemical lab studying S. aureus protein structures, and a physics lab modeling neural potentials in mice.
 
