@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "My Projects"
 relativeURLS = true
+googleAnalytics = "UA-129701467-1"
 
 [params]
     author = "Max Hoffman"

@@ -1,6 +1,6 @@
 ---
 title: "Pytorch, Production ML & WASM"
-type: "tinkering"
+type: "sandboxing"
 date: 2018-11-22T06:55:06-05:00
 draft: true
 ---
@@ -36,5 +36,3 @@ I have a feeling these technical problems will be smoothed out over time. I also
 Check out this [Unreal Engine Sun Temple demo](https://s3.amazonaws.com/mozilla-games/tmp/2017-02-21-SunTemple/SunTemple.html)(doesn't work in Safari). Written in C++, compiled to WASM, and loaded to run in-browser with JavaScript. If this can be run in WebAssembly, someone should be able to operationalize machine learning inference using systems like Cloudflare's Web Workers.
 
 *This is pretty hand-wavy, and I'm not a C engineer, so open to thoughts/feedback/criticism if anyone feels strongly about these technologies. If anyone knows someone building this as a research project or startup I'd be interested to hear about it.*
-
-
