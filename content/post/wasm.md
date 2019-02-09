@@ -27,7 +27,9 @@ Unfortunately, every step of that process involves engineering hurdles that are 
 
 + TVM's code and documentation is tough to understand. The only way I could figure out how to extract an executable WASM from it and Emscripten was probably an abuse of the compiler.
 
-+ Properly building and running a WASM script requires pre- and post-js files (and probably a custom C++ template file) that differ per application. Loading model weights into the script before compilation was also above my head, but seems necessary from production deployment.
++ Properly building and running a WASM script requires pre- and post-js files (and probably a custom C++ template file) that differ per application.
+
++ Loading/caching .bin model weights into a WASM worker seems pretty critical for edge performance, but I can't quite wrap my head around that lifecycle yet.
 
 + The Emscripten compiler and WASM are both in development, and might not always work as expected.
 
@@ -35,4 +37,6 @@ I have a feeling these technical problems will be smoothed out over time. I also
 
 Check out this [Unreal Engine Sun Temple demo](https://s3.amazonaws.com/mozilla-games/tmp/2017-02-21-SunTemple/SunTemple.html)(doesn't work in Safari). Written in C++, compiled to WASM, and loaded to run in-browser with JavaScript. If this can be run in WebAssembly, someone should be able to operationalize machine learning inference using systems like Cloudflare's Web Workers.
 
-*This is pretty hand-wavy, and I'm not a C engineer, so open to thoughts/feedback/criticism if anyone feels strongly about these technologies. If anyone knows someone building this as a research project or startup I'd be interested to hear about it.*
+*This article on [Julia](https://julialang.org/blog/2018/12/ml-language-compiler) is interesting, if somewhat tangential*
+
+*This is pretty hand-wavy, and I'm not a seasoned C engineer, so open to thoughts/feedback/criticism if anyone feels strongly about these technologies. If anyone knows someone building this as a research project or startup I'd be interested to hear about it.*

@@ -87,12 +87,11 @@ The last barrier to implementation is smoothly managing all running threads, pro
 
 + Data only leaves the index-queue from a single source after instantiation. A multiprocessing Queue allows communication of indexes between the parent and worker processes, while the custom `IndexQueue` perpetually feeds data into that loop.
 
-+ Using a `mulitprocessing.Manager.Queue` instead of 'multiprocessing.Queue` provided more stability for us with `Python 2.7.6`. The fidelity of different implementations will depend on your particular version of Python.
++ Using a `mulitprocessing.Manager.Queue` instead of `multiprocessing.Queue` provided more stability for us with `Python 2.7.6`. The fidelity of different implementations will depend on your particular version of Python.
 
 ### Added
 
-We ended up using the batch-queue to replace the index-queue. Instead of copying data to each process,
-we can now send serialized batches to the processes. Because multiprocessing gives us leeway with CPU-intensive operations, we can have data-efficient processes and centrally track epochs while still being GPU-limited.
+We ended up using another batch-queue to replace the index-queue. Instead of copying data to each process, we send serialized batches to the processes. The processes convert serialized data into Tflon-compatible objects. Because multiprocessing gives us leeway with CPU-intensive operations, we can have data-efficient processes and centrally track epochs while still being GPU-limited.
 
 I added this above already, but Pytorch's multiprocessing is pretty comprehensive and worth studying/using ([here](https://pytorch.org/tutorials/intermediate/dist_tuto.html#communication-backends)).
 
