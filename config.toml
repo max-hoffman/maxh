@@ -9,3 +9,6 @@ googleAnalytics = "UA-129701467-1"
     github = "max-hoffman"
     linkedin = "max-hoffman-04790aa6"
     styles = ["css/styles.css"]
+
+[blackfriday] 
+    plainIDAnchors = false

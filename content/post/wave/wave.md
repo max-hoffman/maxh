@@ -1,10 +1,9 @@
 ---
-title: "Wave"
+title: "Graph Think with WAVE"
+type: "research"
 date: 2019-01-08T14:52:05-06:00
 draft: true
 ---
-
-# Graph Think
 
 I spent some time working with graph recurrent neural networks at WashU. One of the key motivations of the project was to design a system that played to a graph's strengths, rather reusing models designed for different applications.
 
@@ -18,9 +17,9 @@ Vector-think fails to capture the variety of real-world systems, however. Video,
 
 ## Problem-scope
 
-The application was drugs/molecules/chemicals added to batteries and nanomaterials. We were interested in using the local electronic properties of atoms to predict non-local/diffuse/structural characteristics of molecules as a whole. In the traditional sense, we were trying to peek at the output of complex quantum wave equations without having to predict the trajectory of every electron in the system. If accurate, the model could save chemists from having to manually trial individual chemicals for their particualr application. If someone were interested in building better batteries for windfarms, they could screen hundreds of thousands of potential chemicals for electronic properties that played well within their physical restrictions for such a battery.
+The application was drugs/molecules/chemicals added to batteries and nanomaterials. We were interested in using the local electronic properties of atoms to predict non-local/diffuse/structural characteristics of molecules as a whole. In the traditional sense, we were trying to peek at the output of complex quantum wave equations without having to predict the trajectory of every electron in the system. If accurate, the model could save chemists from having to manually trial individual chemicals for their particualr application. If someone were interested in building better batteries for windfarms, they could screen hundreds of thousands of potential chemicals for electronic properties that played well within their physical restrictions for such a battery.[^1]
 
->>>As a small aside, super-resolution images are also being studied in this lab (with the same graph techniques). Collections of pixels in histology slides can be traversed as if an image were a big graph. Patterns of disease in tissue are traced the same way a rat searches for peices of cheese in a maze. This is counter-intuitive to the "convolution is for images" argument, but is another good example of how appropriate data representations and models change drastically per application.
+[^1]: Super-resolution images are also being studied in this lab (with the same graph techniques). Collections of pixels in histology tissue slides can be traversed as if an image were a big graph. Patterns of disease are traced the same way a rat searches for peices of cheese in a maze. This is counter-intuitive to the "convolution is for images" argument, but is another good example of how appropriate data representations and models change per application.
 
 My first exposure to graph modelling was via adjacency matrices. This was essentially taking a graph and converting it into a 2d matrix, something mathematicians could more easily conceptualize. Most graph modelling historically did something similar, either by making an `n x n` matrix of atomic repulsion pairs, or by bucketing bond types by frequency anc aggregating output in a feature vector. More recent developments left the graph in-place, and performed layers of local convolution on nodes (equivalent to convolutional filters on images).
 
@@ -32,9 +31,9 @@ What are the relevant features of a graph? How do you best represent those featu
 
 For small graphs, coarse grain aggregation is sufficient. Serialized graphs translate to matrices non-linearly, however, so at scale several things happen. The in-memory requirements grow. Information is more diffuse, and larger state sizes are needed to capture the full complexity of the solution space. In practice, that means `n x n` feature models performed terribly at scale in the domains we were studying.
 
-This is a "round peg in a square-hole" kind of problem. We can't change the data loading formats required to do deep learning, but we can change how the information flows within those models to better match the spatial relationship of graphs.
+This is a "round peg in a square-hole" kind of problem.[^2] We can't change the data loading formats required to do deep learning, but we can change how the information flows within those models to better match the spatial relationship of graphs.
 
->>> Multiple types of targets are also a problem. Different feature and intermediate representations that capture a certain target functions well might fail for predicting other targets. So simultaneous target prediction can suffer in several different ways, in addition to input/output range and variance non-overlap causing trade-offs when tuning model weights.
+[^2]: Multiple types of targets are also a problem. Different feature and intermediate representations that capture a certain target functions well might fail for predicting other targets. So simultaneous target prediction can suffer in several different ways, in addition to input/output range and variance non-overlap causing trade-offs when tuning model weights.
 
 ## Graph-think
 
@@ -48,4 +47,8 @@ In summary, a WAVE model is a network of recurrent units shaped liked the graph 
 
 By tweaking the model structure, we managed to more accurately capture the spatial relationships of graphs. There are many other competing models in the molecule space, but the inital results of stepping away from orthodoxy has scaled promisingly so far.
 
-Different graph types and application domains will require specialized solutions, but I think the takeaways are transferable regardless of whether WAVE is appropriate in every scenario. Change feature serialization and model architecture to work with the inherent data structure. Members of my lab are convinced that [grid cells](https://deepmind.com/blog/grid-cells/) are doing the same thing for navigational machine learning, and [capsule nets](https://arxiv.org/abs/1710.09829) might be a step beyond convolution and towards how human eyes focus and analyze images. From my perspective, anything that deviates from the norm to ask critical and thoughtful questions about a design pattern is worth studying.
+Different graph types and application domains will require specialized solutions, but I think the takeaways are transferable regardless of whether WAVE is appropriate in every scenario. Change feature serialization and model architecture to work with the inherent data structure. Members of my lab are convinced that [grid cells](https://deepmind.com/blog/grid-cells/) are doing the same thing for navigational machine learning[^3], and [capsule nets](https://arxiv.org/abs/1710.09829) might be a step beyond convolution towards human-level focus[^4]. From my perspective, anything that deviates from the norm to ask critical and thoughtful questions about a design pattern is worth studying.
+
+[^3]: Navigation is suposedly the iterative application of simple directional movements. i.e. Going from New York to Los Angeles fundamentally invovles the same fundamental set of movements as moving from your living to bed room. Translating that to nerual nets looks like modular (as in mod arithmetic) units of computation (modular-patterned state-space activations). Other researchers have pushed this concept further to suggest that [generic brain function may derive from a modular arithmetic of basic concepts](http://dx.doi.org/10.1101/442418).
+
+[^4]: A neuroscientist that I spoke to at WashU who researches the macaque visual cortex thought dynamic routing was a necessary (if not yet understood) factor in human vision. The implementation is variable, but the general idea is that processing an image fully on a single pass is tough and unnecessary. Animals use feedback loops to more efficiently synthesize and condense information (i.e. maintain some kind of temporary state to confidently converge prediction), and clever ML implementations might lead to better computer vision.
