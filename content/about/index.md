@@ -15,15 +15,15 @@ resources:
   title: lola
 ---
 
-Welcome to my website. This contains a collection of some links to repos I've worked on, acadamic research projects I've been involved in, and articles when I infrequently write.
+I was previously a medical student at Washington University in Saint Louis, progressing towards a computer science PhD in tandem with his medical degree.  Before medical school I graduated Summa Cum Laude from Pomona College in 2016, double majoring in Chemistry and Mathematics.
 
-I am a second year medical student at Washington University in Saint Louis progressing towards a computer science PhD in tandem with his medical degree.  Before medical school I graduated Summa Cum Laude from Pomona College in 2016, double majoring in Chemistry and Mathematics.
+I worked as a developer in the Swamidass Lab at WashU for awhile, studying graph-based recurrent neural networks that predict quantum chemical properties and contributing to open-source machine learning frameworks. I have worked in an evolutionary dynamics lab modeling chemical reactions, a biological lab modeling C. elegans division, a biochemical lab studying S. aureus protein structures, and a physics lab modeling neural potentials in mice.
 
-I currently works as a developer in the Swamidass Lab at WashU, researching graph-based recurrent neural networks that predict quantum chemical properties and contributing to open-source machine learning frameworks. I have worked in an evolutionary dynamics lab modeling chemical reactions, a biological lab modeling C. elegans division, a biochemical lab studying S. aureus protein structures, and a physics lab modeling neural potentials in mice.
+<!-- I have experience with app, web and blockchain development, previously attending the Hack Reactor bootcamp on a scholarship in 2017. I have a particular interest in developing fields like devops and reinforcement learning that offer generalizable infrastructures for common but challenging problems. -->
 
-I have experience with app, web and blockchain development, previously attending the Hack Reactor bootcamp on a scholarship in 2017. I have a particular interest in developing fields like devops and reinforcement learning that offer generalizable infrastructures for common but challenging problems.
+For the last year I have worked as a venture partner for Contrary Capital, contributing my scientific and technical background to vet hundreds of early stage startups from dozens of universities around the world.
 
-For the last year I have worked as a venture partner for Contrary Capital, contributing my scientific and technical background to vet (hundreds of?) early stage startups from dozens of universities around the world.
+I currently work as a software engineer at Factual in Los Angeles.
 
 <!-- {{< gallery >}} -->
 <div class="gallery">
