@@ -30,11 +30,9 @@ and data science.
 
 My current work at Factual involves:
 
-+ creating better monitoring and workflow
-processes to wrangle large scale data dependencies
++ build and refactor processes that move data around
 
-+ using the leveraged awareness and process scalability those tools
-afford to improve machine learning models
++ build, test and study ML models
 
 I am also interested in graph neural networks, startup and corporate VC,
 private equity, and biotech investing. I am always looking for new and
