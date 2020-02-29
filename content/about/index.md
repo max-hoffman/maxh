@@ -15,15 +15,31 @@ resources:
   title: lola
 ---
 
-I was previously a medical student at Washington University in Saint Louis, progressing towards a computer science PhD in tandem with his medical degree.  Before medical school I graduated Summa Cum Laude from Pomona College in 2016, double majoring in Chemistry and Mathematics.
+<!--I was previously a medical student at Washington University in Saint Louis, progressing towards a computer science PhD in tandem with my medical degree.  Before medical school I graduated Summa Cum Laude from Pomona College in 2016, double majoring in Chemistry and Mathematics.-->
 
-I worked as a developer in the Swamidass Lab at WashU for awhile, studying graph-based recurrent neural networks that predict quantum chemical properties and contributing to open-source machine learning frameworks. I have worked in an evolutionary dynamics lab modeling chemical reactions, a biological lab modeling C. elegans division, a biochemical lab studying S. aureus protein structures, and a physics lab modeling neural potentials in mice.
+<!--I worked as a developer in the Swamidass Lab at WashU for awhile, studying graph-based recurrent neural networks that predict quantum chemical properties and contributing to open-source machine learning frameworks. I have worked in an evolutionary dynamics lab modeling chemical reactions, a biological lab modeling C. elegans division, a biochemical lab studying S. aureus protein structures, and a physics lab modeling neural potentials in mice.-->
 
 <!-- I have experience with app, web and blockchain development, previously attending the Hack Reactor bootcamp on a scholarship in 2017. I have a particular interest in developing fields like devops and reinforcement learning that offer generalizable infrastructures for common but challenging problems. -->
 
-For the last year I have worked as a venture partner for Contrary Capital, contributing my scientific and technical background to vet hundreds of early stage startups from dozens of universities around the world.
+<!--For the last year I have worked as a venture partner for Contrary Capital, contributing my scientific and technical background to vet hundreds of early stage startups from dozens of universities around the world.-->
 
-I currently work as a software engineer at Factual in Los Angeles.
+<!--I currently work as a software engineer at Factual in Los Angeles.-->
+I graudated Summa Cum Laude from Pomona College in 2016,
+and left Washu medical school in 2018 to work in venture capital, engineering
+and data science.
+
+My current work at Factual involves:
+
++ creating better monitoring and workflow
+processes to wrangle large scale data dependencies
+
++ using the leveraged awareness and process scalability those tools
+afford to improve machine learning models
+
+I am also interested in graph neural networks, startup and corporate VC,
+private equity, and biotech investing. I am always looking for new and
+unconventional opportunities in investing, industry or
+academia. Please reach out if you have questions or want to chat.
 
 <!-- {{< gallery >}} -->
 <div class="gallery">

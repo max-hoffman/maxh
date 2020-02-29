@@ -9,5 +9,4 @@ draft: true
 https://www.hackreactor.com/blog/pre-med-major-graduates-code-school-with-plans-to-change-public-health-as-we-know-it)
 
 I remember doing this, but I never saw the article until today.
-It's kind of funny, a little weird.
-
+The headline is pretty out-there, but I appreciate the bio nonetheless.
