@@ -20,8 +20,9 @@ behind our bottleneck, half sit in front, and all of their members, managers and
 customers react to the output of our model.  In a perfect world, teams
 collaborating to process noisy data in pipelines would:
 
-    1) build fault-tolerance systems to accommodate upstream data noise
-    2) independently measure their processes in ways that allow for
+* build fault-tolerance systems to accommodate upstream data noise
+
+* independently measure their processes in ways that allow for
        global variability attribution
 
 Startups with limited resources can prioritize neither. Greenfield teams had
@@ -78,7 +79,7 @@ business categories, and/or in-progress deals to make sure releases don’t
 disrupt products. 
 
 I regret that I only realized this interesting architectural problem after our
-department dissolved. It will be interesting to see what happens next, though.
+department re-orged. It will be interesting to see what happens next, though.
 As a small aside, there are alternative ways of doing what we do, but all of the
 good ones need to generalize beyond businesses who we’ve already hand-labeled
 features for. A popular alternative to a generic model is “point-radius”, which

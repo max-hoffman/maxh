@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Guess my word</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+<div
+    id="container"
+    v-bind:class="{
+        'show-win': winTime,
+        'gave-up': gaveUpTime,
+    }"
+>
+
+<header>
+    <div class="controls">
+        <h1>Guess My Word</h1>
+    </div>
+</header>
+
+<div id="difficulty">
+  <div>
+    <span>Difficulty: </span>
+    <select @change="setDifficulty" v-model="difficulty">
+      <option>normal</option>
+      <option>hard</option>
+      <option>sat</option>
+      <option selected="selected">nightmare</option>
+    </select>
+  </div>
+  <div>
+    <span>Color: </span>
+    <input
+    value="white"
+    id="color-picker"
+    type="text"
+    autocomplete="off"
+    autocorrect="off"
+    v-on:input="setBackgroundColor"
+    />
+  </div>
+</div>
+
+<p style="margin-bottom: 24px">
+    I'm thinking of an English word. Make guesses below and I'll tell you if my word is alphabetically before or after your
+    guess.
+</p>
+
+<h3 v-if="false" style="margin-left: 78px;">Loading...</h3>
+<div v-cloak>
+    <div id="after-guesses-container" v-if="afterGuesses.length">
+        <label id="after-label" class="fixed-width-label" title="My word is after these words">
+            is after:
+        </label>
+        <div>
+            <!-- FIXME how reuse the guess template? -->
+            <div
+                v-for="guess in afterGuesses"
+                class="guess"
+                v-bind:class="{
+                    'current-guess': lastGuess === guess,
+                }"
+            >
+                {{guess}}
+            </div>
+        </div>
+    </div>
+    <div id="guesser">
+        <label class="fixed-width-label"><!-- cheap spacing--></label>
+        <div>
+            <h2 v-if="winTime">You got it! 🎉🎉🎉</h2>
+            <p v-if="winTime">
+                ({{numberGuesses() + 1}} guesses in {{getFormattedTime(winTime - startTime)}})
+            </p>
+            <h3 v-if="gaveUpTime">My word is:</h3>
+            <form name="guesser" v-on:submit.prevent="makeGuess" autocomplete="off" autocorrect="off">
+                <input
+                    id="new-guess"
+                    placeholder="type a word then -->"
+                    type="text"
+                    autocomplete="off"
+                    autocorrect="off"
+                    v-on:input="setGuess"
+                    v-bind:disabled="winTime || gaveUpTime"
+                    v-bind:value="guessValue"
+                />
+                <input
+                    id="submit-guess"
+                    type="submit"
+                    value="guess"
+                    v-bind:disabled="winTime || gaveUpTime"
+                />
+
+                <a
+                    id="give-up"
+                    href="#"
+                    v-on:click="giveUp"
+                    v-if="numberGuesses() && !gaveUpTime"
+                >
+                    give up :(
+                </a>
+
+                <div class="error" v-if="guessError" style="margin: 5px 0px;">
+                    {{guessError}}
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div id="before-guesses-container" v-if="beforeGuesses.length">
+        <label id="before-label" class="fixed-width-label" title="My word is before these words">
+            is before:
+        </label>
+        <div id="before-guesses">
+            <div
+                v-for="guess in beforeGuesses"
+                class="guess"
+                v-bind:class="{
+                    'current-guess': lastGuess === guess,
+                }">
+                {{guess}}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+<script src="trie.js"></script>
+<script src="vue.js"></script>
+<script src="common.js"></script>
+<script src="dict.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
