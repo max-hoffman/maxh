@@ -1,6 +1,6 @@
 ---
-title: "Unrealistic Data Science - Pandas/Spark Subset"
-tpe: "data science"
+title: "Unrealistic DS - Pandas/Spark Subset"
+type: "data science"
 date: 2020-04-10T16:08:33-07:00
 draft: true
 ---

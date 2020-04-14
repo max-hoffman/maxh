@@ -8,4 +8,4 @@ WORKDIR=$DIR/..
 cd $WORKDIR
 
 hugo --source $WORKDIR --theme=basics --buildDrafts
-aws s3 cp --recursive --profile maxhai $WORKDIR/public/ s3://maxhai/
+aws s3 sync --profile maxhai $WORKDIR/public/ s3://maxhai/
