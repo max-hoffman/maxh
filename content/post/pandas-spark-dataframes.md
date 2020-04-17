@@ -15,9 +15,10 @@ to develop right now (or might not even be good ideas in practice),
 but originate from pain points in my work.
 
  * [__Pandas subset that matches Spark
-   syntax__](./pandas-spark-dataframes.md)
+   syntax__](../pandas-spark-dataframes)
+ * [Minimalist workflow execution
+   language](../minimalist-workflow-execution')
  * Spark/Scala Tensorflow
- * Path-based airflow that supports dryruns
  * Database native spark/custom udfs lifecycles
 
 ## Pandas subset that matches Spark syntax
