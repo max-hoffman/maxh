@@ -18,7 +18,7 @@ but originate from pain points in my work.
    syntax__](../pandas-spark-dataframes)
  * [Minimalist workflow execution
    language](../minimalist-workflow-execution')
- * Spark/Scala Tensorflow
+ * [Spark Tensorflow](../spark-tf)
  * Database native spark/custom udfs lifecycles
 
 ## Pandas subset that matches Spark syntax

@@ -22,7 +22,7 @@ but originate from pain points in my work.
    syntax](../pandas-spark-dataframes)
  * [__Minimalist workflow execution
    language__](../minimalist-workflow-execution')
- * Spark/Scala Tensorflow
+ * [Spark Tensorflow](../spark-tf)
  * Database native spark/custom udfs lifecycles
 
 ## Minimalist workflow exectuion language
