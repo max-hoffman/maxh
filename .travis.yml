@@ -4,13 +4,11 @@ services:
     - docker
 
 script:
-    - docker run --rm -i \
-      -v $(pwd):/src \
-      klakegg/hugo:0.73.0 \
-      build -D --gc
-
-script:
-  - hugo --theme=basics --buildDrafts
+    - ./scripts/build.sh
+    #- docker run --rm -i \
+      #-v $(pwd):/src \
+      #klakegg/hugo:0.73.0 \
+      #build -D --gc
 
 # deploy:
 #  - provider: s3
