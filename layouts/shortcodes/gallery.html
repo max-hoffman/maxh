@@ -1,8 +1,0 @@
-{{ with .Page.Resources.ByType "image" }}
-	<div class="Image">
-  {{ range . }}
-    {{ $image := .Fit "300x300 q100" }}
-    <img src="{{ $image.RelPermalink }}" title="{{$image.Title}}">
-	{{ end }}
-	</div>
-{{ end }}

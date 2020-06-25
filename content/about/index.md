@@ -39,7 +39,6 @@ without government policy.
 
 I like petting my dogs and reading George Elliot in my free time.
 
-<!-- {{< gallery >}} -->
 <!--<div class="gallery">-->
   <!--{{< figure src="img/artemis.jpg" name="Artemis" >}}-->
   <!--{{< figure src="img/billy.jpg" name="Billy"  >}}-->

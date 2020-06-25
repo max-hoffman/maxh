@@ -1,0 +1,8 @@
+{{ $path := .Get "src" }}
+{{ $caption := .Get "title" }}
+{{ $class := .Get "class" }}
+<div class="fancybox">
+    <a data-fancybox="gallery" href="{{ $path | absURL }}" data-caption="{{ $caption }}">
+        <img src="{{ $path | absURL }}" class="{{ $class }}" />
+    </a>
+</div>
