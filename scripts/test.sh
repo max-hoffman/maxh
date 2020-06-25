@@ -17,4 +17,3 @@ docker run --rm -it \
     --cleanDestinationDir \
     -D \
     --gc
-aws s3 sync --profile maxhai $WORKDIR/public/ s3://maxhai/

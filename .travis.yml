@@ -1,10 +1,13 @@
-install:
-  - wget -q https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz -O hugo_0.14_linux_amd64.tar.gz
-  - tar -zxf hugo_0.14_linux_amd64.tar.gz
-  - ln -sf ./hugo_0.14_linux_amd64/hugo_0.14_linux_amd64 hugo
+language: bash
 
-git:
-  - submodules: true
+services:
+    - docker
+
+script:
+    - docker run --rm -i \
+      -v $(pwd):/src \
+      klakegg/hugo:0.73.0 \
+      build -D --gc
 
 script:
   - hugo --theme=basics --buildDrafts
