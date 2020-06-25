@@ -12,7 +12,6 @@ docker run --rm -it \
     klakegg/hugo:0.73.0 \
     -p 1313:1313 \
     server \
-    --source $WORKDIR \
     --forceSyncStatic \
     --cleanDestinationDir \
     -D \

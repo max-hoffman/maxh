@@ -9,10 +9,9 @@ cd $WORKDIR
 
 docker run --rm -it \
     -v $(pwd):/src \
-    klakegg/hugo:0.73.0 \
     -p 1313:1313 \
+    klakegg/hugo:0.73.0 \
     build \
-    --source $WORKDIR \
     --forceSyncStatic \
     --cleanDestinationDir \
     -D \
