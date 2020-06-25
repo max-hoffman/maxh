@@ -1,6 +1,7 @@
 ---
 title: "Multiprocessing in Python"
-type: "research/project"
+type: "post"
+tags: ["data","multiprocessing"]
 date: 2018-10-04T19:32:09-05:00
 draft: true
 resources:

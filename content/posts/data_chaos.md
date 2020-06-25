@@ -1,6 +1,6 @@
 ---
 title: "Data Chaos Monkeys"
-type: "data"
+type: "post"
 date: 2020-02-29T08:41:58-08:00
 draft: true
 ---

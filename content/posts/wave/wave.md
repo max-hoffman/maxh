@@ -1,8 +1,9 @@
 ---
 title: "Graph Think with WAVE"
-type: "research"
+type: "post"
+tags: ["graph-rnn", "ml", "washu", "research", "data"]
 date: 2019-01-08T14:52:05-06:00
-draft: true
+draft: false
 ---
 
 I spent some time working with graph recurrent neural networks at WashU. One of the key motivations of the project was to design a system that played to a graph's strengths, rather reusing models designed for different applications.

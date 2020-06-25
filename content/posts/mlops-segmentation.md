@@ -1,8 +1,10 @@
 ---
 title: "MLOps Segmentation"
-type: "market analysis"
+type: "post"
+tags: ["data", "market analysis", "mlops", "data science"]
+keywords: ["data science", "mlops", "market analysis"]
 date: 2020-06-02T16:31:38-07:00
-draft: true
+draft: false
 ---
 
 I was doing some market analysis on data science tools, and broke down
@@ -43,7 +45,7 @@ communities. Enterprise software that is specific to a business sector is
 has value, but lacks the ubiquity of design simplicity and community growth
 desired by open-source projects.
 
-Ahandful of large companies have enough resources to provide
+A handful of large companies have enough resources to provide
 heavy-weight closed-source tools. The remaining products will be judged
 by the winners in the open-source space. Tools that become best practices
 define community thought patterns and abstractions, leaving
@@ -51,60 +53,49 @@ middle-of-the road solutions outside of best-practices by definition.
 
 __A longer (non-exhaustive) list of MLOps companies/projets:__
 
- * Hand-holding:
+Hand-holding:
 
  * Datarobot
-
  * Databricks
-
  * Sagemaker
-
  * Google AutoML
-
  * FBLearner
-
  * Domino
 
 Narrow tools/products:
 
  * Snowflake
-
- * (Tecton.ai?)
-
  * Airflow
-
  * Grafana
-
  * TFServing
-
  * Jenkins
-
  * Kafka
-
  * Datadog
-
  * ONNX
-
  * Artifactory
-
+ * RabbitMQ
+ * (Octo.ml?)
+ * (Tecton.ai?)
  * (Kubernetes maybe)
-
- * Spark, TF, Pytorch, etc
+ * Spark(Databricks), TF, Pytorch, etc
 
 Middle of the road:
 
  * H20.ai
-
  * Algorithmia
-
  * Segment
-
  * Mlflow
-
  * Metaflow
-
  * BentoML
-
  * CortexML
-
+ * GraphPipe
  * Weights and biases
+ * Kubeflow pipelines
+
+Other:
+
+ * GraphPipe
+ * [Denzel](https://github.com/eliorc/denzel)
+ * Clipper
+ * Ray
+ * TVM/Halide

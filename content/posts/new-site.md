@@ -1,8 +1,9 @@
 ---
 title: "Hugo Templating"
-type: "project"
+type: "post"
+tags: ["hugo", "markdown", webdev"]
 date: 2018-09-29T12:55:06-05:00
-draft: true
+draft: false
 ---
 
 I used the Hugo templating framework to build this site, and will list some of the pros/cons that I noticed.

@@ -1,14 +1,15 @@
 ---
 title: "Unrealistic DS - Pandas/Spark Subset"
-type: "data science"
+type: "post"
+tags: ["pandas", "spark", "mlops", "data science", "data"]
 date: 2020-04-10T16:08:33-07:00
-draft: true
+draft: false
 ---
 
-_"Design doesn’t have to be new, but it has to be good. Research doesn’t
+>Design doesn’t have to be new, but it has to be good. Research doesn’t
 have to be good, but it has to be new... The best design surpasses its
 predecessors by using new ideas, and the best research solves problems
-that are not only new, but worth solving." - Paul Graham_
+that are not only new, but worth solving. - Paul Graham
 
 These are a few ideas that might not be possible
 to develop right now (or might not even be good ideas in practice),
@@ -59,65 +60,65 @@ with syntax that extends to Spark, the more performant runtime.
 Here are examples shared logical components:
 
 Select:
-```scala
-df[[“col”’, “col2”]]
+```python3
+df[["col", "col2"]]
 
-df.select(“col1”, “col2”)
+df.select("col1", "col2")
 ```
 
 Filter:
 ```scala
 df[df.col1 > df.col2]
 
-df.filter(col(“col1”) > col(“col2”))
+df.filter(col("col1") > col("col2"))
 ```
 
 New column:
-```scala
-df[“col3”] = 1
+```python3
+df["col3"] = 1
 
-df.withColumn(“col3”, lit(1))
+df.withColumn("col3", lit(1))
 ```
 
 Join:
 ```scala
-df.join(df2.set_index(“key”), on=”key”)
+df.join(df2.set_index("key"), on="key")
 
-df.join(df2, Seq(“key”), “inner”)
+df.join(df2, Seq("key"), "inner")
 ```
 
 Groupby:
 ```scala
-df.groupyby(“col1”).mean(“col3”)
+df.groupyby("col1").mean("col3")
 
-val tmp = df.groupBy(“col1”).mean(col(“col3”).as(“col3_mean”))
-df.join(tmp, Seq(“col1”), “inner”)
+val tmp = df.groupBy("col1").mean(col("col3").as("col3_mean"))
+df.join(tmp, Seq("col1"), "inner")
 ```
 
 Rename:
-```scala
-df.rename({“col1”: “c1”, “col2”: “c2”}, axis=1)
+```python3
+df.rename({"col1": "c1", "col2": "c2"}, axis=1)
 
-val oldCols = List(“col1”, “col2”)
-val newCols = List(“c1”, “c2”)
+val oldCols = List("col1", "col2")
+val newCols = List("c1", "c2")
 df.select(oldCols.head, oldCols.tail: _*).toDf(newCols: _*)
 ```
 
 Udf:
-```scala
-df[“col3”] = df.apply(lambda x: x.col1 + x.col2, axis=1)
+```python3
+df["col3"] = df.apply(lambda x: x.col1 + x.col2, axis=1)
 
 val custom_sum = udf((c1: Double, c2: Double) => c1 + c2)
-df.withColumn(“col3”, custom_sum(col(“col1”), col(“col2”))
+df.withColumn("col3", custom_sum(col("col1"), col("col2"))
 ```
 
 Examples of Python syntax without a Spark counterpart:
-```scala
+```python3
 df3 = pd.concat([df1, df2], axis=1)
 
-df2 = pd.melt(df1, id_vars=[“cat1”], value_vars=[“cat2”, “cat3”])
+df2 = pd.melt(df1, id_vars=["cat1"], value_vars=["cat2", "cat3"])
 
-sub_dfs = [(n, gr.values) for n, gr in df.groupBy(“cat1”)]
+sub_dfs = [(n, gr.values) for n, gr in df.groupBy("cat1")]
 ```
 
 Generally, there is a Spark equivalent for every Pandas pipeline. But

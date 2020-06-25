@@ -1,8 +1,8 @@
 ---
 title: "Galvanize Bio"
-type: "interview"
+type: "post"
 date: 2019-05-25T15:29:29-07:00
-draft: true
+draft: false
 ---
 
 [Galvanize artcle about me from a year ago](

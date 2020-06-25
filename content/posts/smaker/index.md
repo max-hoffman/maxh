@@ -1,8 +1,9 @@
 ---
 title: "Smaker"
 date: 2019-05-25T15:28:52-07:00
-draft: true
-type: "open-source"
+draft: false
+type: "post"
+tags: ["workflow automation", "data", "smaker", "ml"]
 resources:
 - src: 'img/snakemake-dsl.png'
   name: Pipeline

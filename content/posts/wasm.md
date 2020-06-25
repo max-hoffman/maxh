@@ -1,8 +1,8 @@
 ---
 title: "Pytorch, Production ML & WASM"
-type: "sandboxing"
+type: "post"
 date: 2018-11-22T06:55:06-05:00
-draft: true
+draft: false
 ---
 
 Pytorch released version 1.0 in May, the ["production ready pytorch"](https://pytorch.org/blog/the-road-to-1_0/). "Married to Caffe2" and true production-readiness are still ideals on the horizon rather than present realities. Still, the idealogical shift points at a larger universal goal shared by the builders and users of ML infrastructure.

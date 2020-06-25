@@ -1,8 +1,10 @@
 ---
 title: "Guess My Word"
-type: "fork"
+type: "post"
+tags: ["game"]
+keywords: ["guess my word", "game"]
 date: 2020-03-07T09:22:42-08:00
-draft: true
+draft: false
 resources:
 - src: '/smd/'
   name: Guess my word

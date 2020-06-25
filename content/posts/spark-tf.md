@@ -1,12 +1,13 @@
 ---
 title: "Unrealistic DS - Spark Tensorflow"
-type: "data science"
+type: "post"
+tags: ["spark", "tf", "data science", "data", "mlops"]
 date: 2020-05-27T14:38:49-07:00
-draft: true
+draft: false
 ---
 
-_“People aren't afraid of autocrats. People are afraid of being
-different from thier neighbors.” -Jacob Snell (Ozark)_ 
+>People aren't afraid of autocrats. People are afraid of being
+different from thier neighbors. -Jacob Snell (Ozark)
 
 These are a few ideas that might not be possible
 to develop right now (or might not even be good ideas in practice),

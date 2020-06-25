@@ -1,8 +1,9 @@
 ---
 title: "Tflon"
-type: "project"
+type: "post"
+tags: ["tflon", "tf", "mlops", "ml"]
 date: 2018-09-30T06:55:06-05:00
-draft: true
+draft: false
 ---
 
 The Swamidass lab I am researching with has a tooling framework called Tflon. Matthew Mattlock, who wrote most of Tflon, first described the project as his attempt to provide tooling that shared Keras's ease of use, but allowed for the full flexibiliy of Tensorflow.

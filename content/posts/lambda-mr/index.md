@@ -1,7 +1,8 @@
 ---
 title: "Lambda MR"
-type: "project"
+type: "post"
 date: 2020-06-05T10:51:04-07:00
+tags: ["data", "spark", "map-reduce", "ml", "mlops"]
 resources:
 - src: 'img/segment.png'
   name: Segment
@@ -87,9 +88,10 @@ two-dimensional - the surface of the earth. By running an entire city
 through the model, I can visualize exactly which areas of space the
 model is attributing to which stores.
 
-<div class="center">
-  {{< figure src="img/segment.png" name="Segment" width="400" >}}
-</div>
+<!--<div class="center">-->
+  <!--{{< figure src="img/segment.png" name="Segment" width="400" >}}-->
+<!--</div>-->
+{{< img src="posts/lambda-mr/img/segment.png" class="large" caption="Segments" >}}
 
 To give some additional background, running the model over a space lets
 me quantify properties of the model using its output topology.

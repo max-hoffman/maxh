@@ -1,18 +1,18 @@
 ---
 title: "Unrealistic DS - Minimalist Workflows"
-type: "data science"
+type: "post"
 date: 2020-04-14T15:32:59-07:00
 draft: true
 ---
 
-_“Right-thing philosophy is based on letting the experts do their expert
+>Right-thing philosophy is based on letting the experts do their expert
 thing all the way to the end before users get their hands on it. [But]
 in some cases, the software system that succeeds starts with a kernel of
 good technology, but it is not committed to fully realizing that
 technology. By enabling users to live in the implementation to some
 extent or to mold the technology to users’ needs while dropping hurdles
 to the use of the technology, that system is able to survive and
-evolve.” - Richard P Gabriel_
+evolve. - Richard P Gabriel
 
 These are a few ideas that might not be possible
 to develop right now (or might not even be good ideas in practice),

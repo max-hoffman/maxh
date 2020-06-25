@@ -1,8 +1,9 @@
 ---
 title: "Teach Yourself CS Pt1"
-type: "article/project"
+type: "post"
+tags: ["engineering", "self-teach-cs"]
 date: 2019-02-09T10:13:12-08:00
-draft: true
+draft: false
 ---
 
 I have been using [Teach Yourself CS](https://teachyourselfcs.com) as a self-study reference from the makers of the Lambda School. The page transparently summarizes its goals and intended users (i.e. bootcamp grads), and it has been extremely helpful suggesting a general framework for studying.

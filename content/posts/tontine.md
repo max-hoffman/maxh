@@ -1,8 +1,8 @@
 ---
 title: "Solidity & Tontines"
-type: "article/project"
+type: "post"
 date: 2018-01-02T12:55:06-05:00
-draft: true
+draft: false
 ---
 
 I worked on a project awhile ago motivated by the inadequacies of the public pension system. We are approaching a tripling of retirement-age Americans. The pension systems are buckling due to poor market performance after the 2007 crash. Healthcare spending continues to rise ad neaseum. And Social Security, the only retirement plan for up to half of Americans, already has a set date for Trust Fund depletion: 2034.
