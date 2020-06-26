@@ -1,13 +1,3 @@
-/*img {*/
-  /*image-orientation: from-image;*/
-  /*height:auto;*/
-/*}*/
-/*img {*/
-    /*[>float: left;<]*/
-  /*object-fit: cover;*/
-  /*width: 100%;*/
-/*}*/
-
 div.post_content.markdown img.mid {
  max-width: 45%;
 }
@@ -17,26 +7,9 @@ div.post_content.markdown img.large {
  padding: 2em;
 }
 
-div.gallery figure {
-  flex-grow: 1;
-  margin: 1em;
-  align-items: center;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: row;
-}
-
 @media only screen and (max-width: 640px) {
   figure {
     flex-grow: 1;
-  }
-
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -49,8 +22,6 @@ div.center figure img {
 }
 
 div.post_content.markdown p {
-  /*text-indent: 2em;*/
   padding-bottom: 1em;
   line-height: 1.5em;
-  /*font-family: serif;*/
 }

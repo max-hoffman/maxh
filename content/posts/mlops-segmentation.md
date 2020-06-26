@@ -99,3 +99,4 @@ Other:
  * Clipper
  * Ray
  * TVM/Halide
+ * [Kedro](https://kedro.readthedocs.io)

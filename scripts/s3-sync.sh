@@ -10,11 +10,10 @@ cd $WORKDIR
 docker run --rm -it \
     -v $(pwd):/src \
     klakegg/hugo:0.73.0 \
-    -p 1313:1313 \
-    server \
-    --source $WORKDIR \
+    build \
     --forceSyncStatic \
     --cleanDestinationDir \
     -D \
     --gc
+
 aws s3 sync --profile maxhai $WORKDIR/public/ s3://maxhai/

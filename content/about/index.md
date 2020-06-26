@@ -32,19 +32,11 @@ __any__ models in production. I think MLOps tools that work orthogonal to
 the iterative training smash-and-grab cycle can help more
 industries, data scientists and engineers mazimize their data ROI.
 
-I am also interested in finding ways to modernize academia and healthcare
-institutions in ways that better incentivize and promote science,
+I am also interested in finding ways to modernize academic and healthcare
+institutions in ways that incentivize and promote more useful science,
 although I am less optimistic about those things being addressable
 without government policy.
 
-I like petting my dogs and reading George Elliot in my free time.
-
-<!--<div class="gallery">-->
-  <!--{{< figure src="img/artemis.jpg" name="Artemis" >}}-->
-  <!--{{< figure src="img/billy.jpg" name="Billy"  >}}-->
-  <!--{{< figure src="img/lola.jpg" name="Lola"  >}}-->
-<!--</div>-->
+I like petting my dogs and reading George Eliot in my free time.
 
 {{< img src="about/img/artemis.jpg" class="mid" caption="Artemis" >}}
-<!--{{< img src="about/img/billy.jpg" >}}-->
-<!--{{< img src="about/img/lola.jpg" >}}-->

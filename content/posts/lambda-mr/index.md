@@ -13,15 +13,14 @@ draft: true
 ## What problems to Spark and Map Reduce solve?
 
 Was Spark the next generation of MapReduce? Do they solve the same
-problem? Is Spark is quick and failure-prone, while MapReduce is slow
+problem? Is Spark quick and failure-prone, while MapReduce is slow
 and reliable?
 
 To play devil's advocate, I think MapReduce was the right abstraction
 for the wrong problem. There are several reasons why Spark is easier on
 developers than MapReduce, but at their core both attempted to solve the
 problem of data ETL at scale. Why Spark is different, and I think
-outcompeted
-MapReduce, is that Spark is better tailored for actually doing data
+outcompeted MapReduce, is that Spark is better tailored for actually doing data
 transformations. The Spark model is faster, easier to write, and offers
 more features; MapReduce provides limited functionality, slower performance
 and agonizingly boilerplate code. Spark chose
