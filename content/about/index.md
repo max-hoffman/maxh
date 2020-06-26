@@ -1,8 +1,9 @@
 ---
 title: "About"
-date: 2018-09-29T08:26:20-05:00
-draft: true
+date: 2020-06-24T08:26:20-05:00
+draft: false
 layout: default
+hidden: true
 resources:
 - src: 'img/billy.jpg'
   name: Billy
@@ -15,33 +16,27 @@ resources:
   title: lola
 ---
 
-<!--I was previously a medical student at Washington University in Saint Louis, progressing towards a computer science PhD in tandem with my medical degree.  Before medical school I graduated Summa Cum Laude from Pomona College in 2016, double majoring in Chemistry and Mathematics.-->
+I have shifted between academia, medicine, venture capital and
+software engineering since graduating from Pomona College with chemistry
+and mathematics degrees. I spent a year working in each field before
+taking leave from WashU's MD/PhD program.
 
-<!--I worked as a developer in the Swamidass Lab at WashU for awhile, studying graph-based recurrent neural networks that predict quantum chemical properties and contributing to open-source machine learning frameworks. I have worked in an evolutionary dynamics lab modeling chemical reactions, a biological lab modeling C. elegans division, a biochemical lab studying S. aureus protein structures, and a physics lab modeling neural potentials in mice.-->
+I build web services, organize data warehouses, and design machine
+learning systems, but my favorite work involves building collaborative
+bridges between data science researchers and systems engineers.
 
-<!-- I have experience with app, web and blockchain development, previously attending the Hack Reactor bootcamp on a scholarship in 2017. I have a particular interest in developing fields like devops and reinforcement learning that offer generalizable infrastructures for common but challenging problems. -->
+AI hype is leaving a glut of unsexy commoditized models in its wake.
+Most open source tools are similarly geared towards building and training more
+complicated models, despite most companies failing to organize, deploy and monitor
+__any__ models in production. I think MLOps tools that work orthogonal to
+the iterative training smash-and-grab cycle can help more
+industries, data scientists and engineers mazimize their data ROI.
 
-<!--For the last year I have worked as a venture partner for Contrary Capital, contributing my scientific and technical background to vet hundreds of early stage startups from dozens of universities around the world.-->
+I am also interested in finding ways to modernize academic and healthcare
+institutions in ways that incentivize and promote more useful science,
+although I am less optimistic about those things being addressable
+without government policy.
 
-<!--I currently work as a software engineer at Factual in Los Angeles.-->
-I graudated Summa Cum Laude from Pomona College in 2016,
-and left Washu medical school in 2018 to work in venture capital, engineering
-and data science.
+I like petting my dogs and reading George Eliot in my free time.
 
-My current work at Factual involves:
-
-+ build and refactor processes that move data around
-
-+ build, test and study ML models
-
-I am also interested in graph neural networks, startup and corporate VC,
-private equity, and biotech investing. I am always looking for new and
-unconventional opportunities in investing, industry or
-academia. Please reach out if you have questions or want to chat.
-
-<!-- {{< gallery >}} -->
-<div class="gallery">
-  {{< figure src="img/artemis.jpg" name="Artemis" height="250" >}}
-  {{< figure src="img/billy.jpg" name="Billy" height="250" >}}
-  {{< figure src="img/lola.jpg" name="Lola" height="250" >}}
-</div>
+{{< img src="about/img/artemis.jpg" class="mid" caption="Artemis" >}}

@@ -1,25 +1,15 @@
-img {
-  image-orientation: from-image;
+div.post_content.markdown img.mid {
+ max-width: 45%;
 }
 
-figure {
-  flex-grow: 1
-}
-
-.gallery {
-  display: flex;
-  flex-direction: row;
+div.post_content.markdown img.large {
+ max-width: 70%;
+ padding: 2em;
 }
 
 @media only screen and (max-width: 640px) {
   figure {
-    flex-grow: 1
-  }
-  
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-grow: 1;
   }
 }
 
@@ -29,4 +19,9 @@ div.center figure img {
   margin: auto;
   padding: 20px;
   max-width: 80%;
+}
+
+div.post_content.markdown p {
+  padding-bottom: 1em;
+  line-height: 1.5em;
 }

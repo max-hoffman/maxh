@@ -11,4 +11,4 @@ cd $WORKDIR
 aws cloudfront create-invalidation \
     --profile maxhai \
     --distribution-id $DISTRIBUTION_ID \
-    --paths "${@$}"
+    --paths "$@"

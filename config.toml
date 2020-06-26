@@ -1,15 +1,76 @@
-baseURL = "/"
-languageCode = "en-us"
-title = "Notes and Work"
-relativeURLS = true
+baseURL = "https://www.maxh.ai/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Max Hoffman"                         # site title  # 网站标题
+theme = "zozo"
+hasCJKLanguage = false                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
+summaryLength = 40
+paginate = 6                           # shows the number of articles  # 首页显示文章数量
+enableEmoji = true
 googleAnalytics = "UA-161423111-1"
-theme = "basics"
+disqusShortname = ""                   # your discuss shortname
+staticDir = ["static"]
 
-[params]
-    author = "Max Hoffman"
-    github = "max-hoffman"
-    linkedin = "max-hoffman-04790aa6"
-    styles = ["css/styles.css"]
+pygmentsUseClasses = true
+pygmentCodeFences = true
+pygmentscodefencesguesssyntax = true
+
+[author]                               # essential                     # 必需
+  name = "Max Hoffman"
 
 [blackfriday]
-    plainIDAnchors = false
+  smartypants = false
+
+[[menu.main]]                          # config your menu  # 配置菜单
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Archive"
+  weight = 20
+  identifier = "archive"
+  url = "/posts/"
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "About"
+  weight = 40
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  subTitle = "writing practice | tech focused"                                       # site's subTitle  # 网站二级标题
+  footerSlogan = "The beginning of an acquaintance whether with persons or things is to get a definite outline of our ignorance."                                   # site's footer slogan  # 网站页脚标语
+  keywords = ["Max Hoffman","data","engineering", "ml", "data science"]                                  # site's keywords  # 网站关键字
+  description = "description"                        # site's description  # 网站描述
+  enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
+  enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
+  mainSections = ["posts", "post"]
+  customCss = ["styles.css"]
+
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[params.valine]
+  enable = false
+  appId = ""
+  appKey = ""
+  placeholder = " "
+  visitor = true
+
+# Your socail's url
+[social]
+  github = "https://github.com/max-hoffman"
+  twitter = "https://twitter.com/maxwhoffman"
+  facebook = " "
+#  weibo = " "
+  instagram = "https://www.instagram.com/maxwhoffman/"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
