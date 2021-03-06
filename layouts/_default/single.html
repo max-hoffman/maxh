@@ -12,6 +12,9 @@
                         <span class="date">{{ .Date.Format "2006.01.02" }}</span>
                     </div>
                     <div class="post_content markdown">{{ .Content }}</div>
+                    {{ if eq .Name "Baking" }}
+                        {{ partial "gallery.html" . }}
+                    {{ end }}
                     <div class="post_footer">
                         {{ with .Params.tags }}
                         <div class="meta">

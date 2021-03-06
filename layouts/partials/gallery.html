@@ -1,0 +1,14 @@
+{{ $url := (path.Join "/" (path.Dir .Path) "img") }}
+{{ $folder := (path.Join "/public" (path.Dir .Path) "img") }}
+{{ $files := readDir $folder }}
+<div>
+  {{ range sort $files ".Name" "desc" }}
+      {{ if ne .Name ".DS_Store" }}
+          <figure>
+            <a href="{{$url}}/{{.Name }}">
+              <img class="mid" src="{{$url}}/{{.Name }}">
+            </a>
+          </figure>
+      {{ end }}
+  {{ end }}
+</div>

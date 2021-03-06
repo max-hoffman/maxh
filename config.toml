@@ -41,6 +41,11 @@ pygmentscodefencesguesssyntax = true
   weight = 40
   identifier = "about"
   url = "/about/"
+[[menu.main]]
+  name = "Baking"
+  weight = 40
+  identifier = "baking"
+  url = "/baking/"
 
 [params]
   subTitle = "writing practice | tech focused"                                       # site's subTitle  # 网站二级标题
